@@ -37,6 +37,6 @@ public class Kauppa {
         int summa = ostoskori.hinta();
         
         return pankki.tilisiirto(nimi, viite, tiliNumero, kaupanTili, summa);
-    }
-
+    }    
+    
 }
