@@ -54,7 +54,18 @@ public class Submission {
 
     @Override
     public String toString() {
-        String r = " " + course + ", viikko " + week + " tehtyjä tehtäviä yhteensä " + exercises.length + " aikaa kului " + hours + " tehdyt tehtävät: " + this.listExercises();
+        String r = course + ", viikko " + week + ":\n" + " tehtyjä tehtäviä yhteensä " + exercises.length + " aikaa kului " + hours + " tehdyt tehtävät: " + this.listExercises();
+        return r;
+    }
+    
+    public String toStringWithCourseInformation(Course[] courses) {
+        Course cur = null;
+        for (Course c : courses) {
+            if (c.getName().equals(this.course)) {
+                cur = c;
+            }
+        }
+        String r = "viikko " + week + ":\n" + " tehtyjä tehtäviä yhteensä " + exercises.length + "/" + (cur.getExercises()[week]) + " aikaa kului " + hours + " tehdyt tehtävät: " + this.listExercises();
         return r;
     }
     
