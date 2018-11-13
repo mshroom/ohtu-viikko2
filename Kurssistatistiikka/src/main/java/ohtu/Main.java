@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.apache.http.client.fluent.Request;
 
+
 public class Main {
 
     public static void main(String[] args) throws IOException {
@@ -21,20 +22,21 @@ public class Main {
 
         String url2 = "https://studies.cs.helsinki.fi/courses/courseinfo";
         String bodyText2 = Request.Get(url2).execute().returnContent().asString();
+
+
         /*
         System.out.println("json-muotoinen data:");
         System.out.println(bodyText2);
-        */
-
+         */
         Gson mapper = new Gson();
         Submission[] subs = mapper.fromJson(bodyText, Submission[].class);
-        for (int i = 0; i <= subs.length - 1; i ++) {
+        for (int i = 0; i <= subs.length - 1; i++) {
             Submission s = subs[i];
         }
-        
-        Gson mapper2 = new Gson();
-        Course[] courses = mapper2.fromJson(bodyText2, Course[].class);        
 
+        Gson mapper2 = new Gson();
+        Course[] courses = mapper2.fromJson(bodyText2, Course[].class);
+        
         System.out.println("Opiskelijanumero " + studentNr);
         MyStatistics myStats = new MyStatistics(subs, courses);
         myStats.printStatistics();
