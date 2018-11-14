@@ -3,3 +3,5 @@ jukka;akkuj
 make;makea
 ukko;ukkeli
 pyypallo;peltopyy1
+uusikayttaja1;mypassword123
+uusikayttaja2;mypassword123
