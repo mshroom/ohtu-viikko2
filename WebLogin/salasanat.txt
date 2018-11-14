@@ -5,3 +5,6 @@ ukko;ukkeli
 pyypallo;peltopyy1
 uusikayttaja1;mypassword123
 uusikayttaja2;mypassword123
+kokkeli1;kokkeli1
+kukkeli;t5
+ggg;b4
