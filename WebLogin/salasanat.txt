@@ -1,0 +1,5 @@
+pekka;akkep
+jukka;akkuj
+make;makea
+ukko;ukkeli
+pyypallo;peltopyy1
