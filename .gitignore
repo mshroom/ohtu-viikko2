@@ -1,3 +1,4 @@
+/Verkkokauppa1/.nb-gradle/
 /Verkkokauppa1/build/
 /Kurssistatistiikka/.nb-gradle/
 /Kurssistatistiikka/build/
@@ -6,3 +7,7 @@
 /LoginCucumber/.nb-gradle/
 /LoginCucumber/build/
 /WebLogin/.nb-gradle/
+/MockitoDemo/.nb-gradle/
+/MockitoDemo/build/
+/MatkakorttiMockito/.nb-gradle/
+/MatkakorttiMockito/build/
